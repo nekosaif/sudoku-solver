@@ -18,12 +18,12 @@ This is a graphical Sudoku solver built using **PyQt5** and the **backtracking a
    - Each line represents a row of the board.
    - Numbers are separated by spaces.
    - Empty cells are represented by `0`.
-   
+
 2. **Algorithm**: The solver uses a backtracking algorithm:
    - It fills empty cells (starting from the top-left) by trying numbers from 1 to 9.
    - If a number is valid according to Sudoku rules (row, column, and 3x3 subgrid), it is placed.
    - If the board reaches an invalid state, the algorithm backtracks by removing numbers and trying other possibilities.
-   
+
 3. **Visualization**: The GUI shows each step, updating the board in real-time:
    - Valid placements turn **green**.
    - Backtracked invalid moves turn **red**.
@@ -36,3 +36,7 @@ To run the project, you'll need to install **PyQt5**. Use the following command 
 ```bash
 pip install pyqt5
 ```
+
+## Preview
+
+![Preview](img/preview.gif)
